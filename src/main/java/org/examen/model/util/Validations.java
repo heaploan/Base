@@ -12,6 +12,7 @@ import java.util.HashMap;
 public class Validations {
     private Manager manager = Manager.getInstance();
 
+    //Comprueba la longitud del comando y lanza la excepción en caso de pasarse o ser menor.
     public void valComLength(String[] command, int expectedLength) throws CommandException{
         if(command.length != expectedLength){
             throw new CommandException(CommandException.WRONG_NUM_ARGS);
