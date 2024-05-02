@@ -4,6 +4,8 @@ import org.examen.exceptions.CommandException;
 import org.examen.model.enums.Enum1;
 import org.examen.model.enums.Enum2;
 
+import java.util.Locale;
+
 public class Validations {
     public void valComLength(String[] command, int expectedLength) throws CommandException{
         if(command.length != expectedLength){
@@ -39,7 +41,7 @@ public class Validations {
 
     public Enum1 valEnum1(String enum1) throws CommandException {
         try{
-            return Enum1.valueOf(enum1);
+            return Enum1.valueOf(enum1.toUpperCase());
         } catch (IllegalArgumentException e){
             throw new CommandException(CommandException.WRONG_ENUM1);
         }
@@ -47,7 +49,7 @@ public class Validations {
 
     public Enum2 valEnum2(String enum2) throws CommandException {
         try{
-            return Enum2.valueOf(enum2);
+            return Enum2.valueOf(enum2.toUpperCase());
         } catch (IllegalArgumentException e){
             throw new CommandException(CommandException.WRONG_ENUM2);
         }
