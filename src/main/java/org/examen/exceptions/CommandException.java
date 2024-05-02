@@ -11,6 +11,8 @@ public class CommandException extends Exception {
     public static final int WRONG_NUM_FORMAT = 4;
     public static final int WRONG_ENUM1 = 5;
     public static final int WRONG_ENUM2 = 6;
+    public static final int OBJECT1_DOES_NOT_EXISTS = 7;
+    public static final int OBJECT2_DOES_NOT_EXISTS = 8;
 
     private final List<String> messages = Arrays.asList(
             "Wrong operation",
@@ -19,7 +21,9 @@ public class CommandException extends Exception {
             "Key2 already exists",
             "Wrong number format",
             "Wrong enum1",
-            "Wrong enum2"
+            "Wrong enum2",
+            "Object1 doesn't exists",
+            "Object2 doesn't exists"
     );
 
     public final int code;
