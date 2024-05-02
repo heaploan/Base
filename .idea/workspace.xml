@@ -5,12 +5,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf6f61de-e878-4dbd-9692-abe2f40918a5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/examen/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/examen/controller/Manager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/examen/exceptions/CommandException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/examen/model/Objeto1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/examen/model/Objeto2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/examen/model/enums/Enum1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/examen/model/enums/Enum2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/examen/model/util/Validations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/examen/view/InputData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/examen/view/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/examen/view/Options.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/examen/view/messages/Message.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 5
@@ -24,7 +52,13 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "E:/java/Base/src/main/java/org/examen/Main.java",
     "vue.rearranger.settings.migration": "true"
@@ -46,22 +80,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1714639156316</updated>
-      <workItem from="1714639157678" duration="5000" />
+      <workItem from="1714639157678" duration="2526000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/examen/Main.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
