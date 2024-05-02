@@ -8,8 +8,8 @@ import java.util.Map;
 
 public class Manager {
     private static Manager instance;
-    private Map<String, Objeto1> objeto1Map;
-    private Map<String, Objeto2> objeto2Map;
+    private HashMap<String, Objeto1> objeto1Map;
+    private HashMap<String, Objeto2> objeto2Map;
 
     private Manager(){
         this.objeto1Map = new HashMap<>();
@@ -22,11 +22,11 @@ public class Manager {
         return instance;
     }
 
-    public Map<String, Objeto1> getObjeto1Map() {
+    public HashMap<String, Objeto1> getObjeto1Map() {
         return objeto1Map;
     }
 
-    public Map<String, Objeto2> getObjeto2Map() {
+    public HashMap<String, Objeto2> getObjeto2Map() {
         return objeto2Map;
     }
 }

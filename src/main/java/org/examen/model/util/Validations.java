@@ -7,6 +7,7 @@ import org.examen.model.Objeto2;
 import org.examen.model.enums.Enum1;
 import org.examen.model.enums.Enum2;
 
+import java.util.HashMap;
 import java.util.Map;
 
 public class Validations {
@@ -61,21 +62,21 @@ public class Validations {
     }
 
     public void valObjeto1Exists(String command) throws CommandException {
-        Map<String,Objeto1> objetos = manager.getObjeto1Map();
+        HashMap<String,Objeto1> objetos = manager.getObjeto1Map();
         if(objetos.containsKey(command)){
             throw new CommandException(CommandException.KEY1_ALREADY_EXISTS);
         }
     }
 
     public void valObjeto1NotExists(String command) throws CommandException {
-        Map<String,Objeto1> objetos = manager.getObjeto1Map();
+        HashMap<String,Objeto1> objetos = manager.getObjeto1Map();
         if(!objetos.containsKey(command)){
             throw new CommandException(CommandException.OBJECT1_DOES_NOT_EXISTS);
         }
     }
 
     public void valObjeto2Exists(String command) throws CommandException {
-        Map<String, Objeto2> objetos = manager.getObjeto2Map();
+        HashMap<String, Objeto2> objetos = manager.getObjeto2Map();
         if(objetos.containsKey(command)){
             throw new CommandException(CommandException.KEY2_ALREADY_EXISTS);
         }
