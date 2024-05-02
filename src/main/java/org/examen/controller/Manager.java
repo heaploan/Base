@@ -4,7 +4,6 @@ import org.examen.model.Objeto1;
 import org.examen.model.Objeto2;
 
 import java.util.HashMap;
-import java.util.Map;
 
 public class Manager {
     private static Manager instance;

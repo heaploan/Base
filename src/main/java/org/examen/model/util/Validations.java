@@ -8,7 +8,6 @@ import org.examen.model.enums.Enum1;
 import org.examen.model.enums.Enum2;
 
 import java.util.HashMap;
-import java.util.Map;
 
 public class Validations {
     private Manager manager = Manager.getInstance();
@@ -19,8 +18,9 @@ public class Validations {
         }
     }
 
-    public void valComLength(String[] commandParts, int min, int max) throws CommandException{
-        if(commandParts.length < min || commandParts.length > max ) {
+    //Comprueba un minimo y un máximo de la longitud del comando
+    public void valComLength(String[] command, int min, int max) throws CommandException{
+        if(command.length < min || command.length > max ) {
             throw new CommandException(CommandException.WRONG_NUM_ARGS);
         }
     }
@@ -43,6 +43,28 @@ public class Validations {
       } catch (NumberFormatException e){
           throw new CommandException(CommandException.WRONG_NUM_FORMAT);
       }
+    }
+
+    public int checkInteger(String num, Integer min, Integer max) throws CommandException {
+        int iNum = valIntNum(num);
+        if (min != null && iNum < min) {
+            throw new CommandException(CommandException.WRONG_NUM_FORMAT);
+        }
+        if (max != null && iNum > max) {
+            throw new CommandException(CommandException.WRONG_NUM_FORMAT);
+        }
+        return iNum;
+    }
+
+    public float checkFloat(String num, Float min, Float max) throws CommandException {
+        float fNum = valFloatnum(num);
+        if (min != null && fNum < min) {
+            throw new CommandException(CommandException.WRONG_NUM_FORMAT);
+        }
+        if (max != null && fNum > max) {
+            throw new CommandException(CommandException.WRONG_NUM_FORMAT);
+        }
+        return fNum;
     }
 
     public Enum1 valEnum1(String enum1) throws CommandException {

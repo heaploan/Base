@@ -24,7 +24,7 @@ public class CommandException extends Exception {
             "Wrong enum2",
             "Object1 doesn't exists",
             "Object2 doesn't exists"
-    );
+    ); //NO TE OLVIDES DE CAMBIAR LAS EXCEPCIONES
 
     public final int code;
 

@@ -20,21 +20,15 @@ public class Message {
     );
 
     public String getMessage(int code){
-        return switch (code) {
-            case MESSAGE1 -> ANSI_BLUE + msgs.get(MESSAGE1) + ANSI_RESET;
-            case MESSAGE2 -> ANSI_BLUE + msgs.get(MESSAGE2) + ANSI_RESET;
-            case MESSAGE3 -> ANSI_BLUE + msgs.get(MESSAGE3) + ANSI_RESET;
-            case MESSAGE4 -> ANSI_RED + msgs.get(MESSAGE4) + ANSI_RESET;
-            default -> ANSI_RED + "Unknown Error" + ANSI_RESET;
-        };
+        return ANSI_BLUE + msgs.get(code) + ANSI_RESET;
     }
 
     public String getMessage(int code, String[] args){
         return switch (code) {
-            case MESSAGE1 -> ANSI_BLUE + msgs.get(MESSAGE1) + args[1] + ANSI_RESET;
-            case MESSAGE2 -> ANSI_BLUE + msgs.get(MESSAGE2) + args[1] + ANSI_RESET;
-            case MESSAGE3 -> ANSI_BLUE + msgs.get(MESSAGE3) + args[1] + ANSI_RESET;
-            case MESSAGE4 -> ANSI_RED + msgs.get(MESSAGE4) + args[1] + ANSI_RESET;
+            case MESSAGE1 -> ANSI_BLUE + " " + args[1] + ANSI_RESET;
+            case MESSAGE2 -> ANSI_BLUE + " " + args[1] + ANSI_RESET;
+            case MESSAGE3 -> ANSI_BLUE + " " + args[1] + ANSI_RESET;
+            case MESSAGE4 -> ANSI_RED + " " + args[1] + ANSI_RESET;
             default -> ANSI_RED + "Unknown Error" + ANSI_RESET;
         };
     }
