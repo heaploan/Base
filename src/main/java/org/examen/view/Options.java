@@ -7,7 +7,6 @@ import org.examen.model.util.Validations;
 import org.examen.view.messages.Message;
 
 import java.util.HashMap;
-// NO TE OLVIDES DE CAMBIAR LAS EXCEPCIONES
 
 public class Options {
     private String[] command;
